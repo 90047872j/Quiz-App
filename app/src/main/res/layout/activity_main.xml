@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
+    android:background="@color/mainBackgroundColor"
     tools:context="com.example.android.lesmillsquizapp.MainActivity">
 
     <LinearLayout
@@ -20,8 +20,8 @@
 
             <ImageView
                 android:id="@+id/backgroundImageView"
-                android:src="@drawable/mainbackground"
-                style="@style/backgroundImageStyle" />
+                style="@style/backgroundImageStyle"
+                android:src="@drawable/mainbackground" />
 
             <LinearLayout
                 android:id="@+id/headerLayout"
@@ -31,35 +31,33 @@
 
                 <ImageView
                     android:id="@+id/mainLogoImageview"
-                    android:src="@drawable/mainlogo"
-                    style="@style/mainLogoStyle" />
+                    style="@style/mainLogoStyle"
+                    android:src="@drawable/mainlogo" />
 
                 <TextView
                     android:id="@+id/presentationFirstTextView"
-                    android:text="@string/welcomeText"
-                    style="@style/presentationFirstTextStyle" />
+                    style="@style/presentationFirstTextStyle"
+                    android:text="@string/welcomeText" />
 
                 <EditText
                     android:id="@+id/userNameEditText"
-                    android:hint="@string/editTextNameString"
-                    style="@style/editTextStyle" />
+                    style="@style/userNameEditTextStyle"
+                    android:hint="@string/editTextNameString" />
 
 
                 <TextView
                     android:id="@+id/presentatioSecondTextView"
-                    android:text="@string/welcome2Text"
-                    style="@style/presentationSecondTextStyle" />
+                    style="@style/presentationSecondTextStyle"
+                    android:text="@string/welcome2Text" />
 
 
                 <TextView
                     android:id="@+id/separatorBeginTextView"
-                    android:text="@string/beginText"
-                    style="@style/separatorTextViewStyle" />
-
+                    style="@style/separatorTextViewStyle"
+                    android:text="@string/beginText" />
 
 
             </LinearLayout>
-
 
         </RelativeLayout>
 
@@ -79,29 +77,28 @@
 
             <RadioGroup
                 android:id="@+id/question1Group"
-                android:tag="3"
-                style="@style/radioGroupStyle">
+                style="@style/radioGroupStyle"
+                android:tag="@string/correctAnswerQ1tag">
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/aAnswerQ1" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/bAnswerQ1" />
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/cAnswerQ1" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/dAnswerQ1" />
 
             </RadioGroup>
 
         </LinearLayout>
-
 
         <LinearLayout
             android:id="@+id/question2Layout"
@@ -120,22 +117,22 @@
             <RadioGroup
                 android:id="@+id/question2Group"
                 style="@style/radioGroupStyle"
-                android:tag="3">
+                android:tag="@string/correctAnswerQ2tag">
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/aAnswerQ2" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/bAnswerQ2" />
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/cAnswerQ2" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/dAnswerQ2" />
 
             </RadioGroup>
@@ -156,28 +153,29 @@
                 style="@style/questionStatementStyle"
                 android:text="@string/question3" />
 
-            <RadioGroup
-                android:id="@+id/question3Group"
-                style="@style/radioGroupStyle"
-                android:tag="1">
+            <CheckBox
+                android:id="@+id/aAnswerQ3checkBox"
+                style="@style/possibleAnswerStyle"
+                android:tag="@string/incorrectAnswerQ3tag"
+                android:text="@string/aAnswerQ3" />
 
-                <RadioButton
-                    style="@style/radioButtonStyle"
-                    android:text="@string/aAnswerQ3" />
+            <CheckBox
+                android:id="@+id/bAnswerQ3checkBox"
+                style="@style/possibleAnswerStyleRed"
+                android:tag="@string/correctAnswerQ3tag"
+                android:text="@string/bAnswerQ3" />
 
-                <RadioButton
-                    style="@style/radioButtonRedStyle"
-                    android:text="@string/bAnswerQ3" />
+            <CheckBox
+                android:id="@+id/cAnswerQ3checkBox"
+                style="@style/possibleAnswerStyle"
+                android:tag="@string/correctAnswerQ3tag"
+                android:text="@string/cAnswerQ3" />
 
-                <RadioButton
-                    style="@style/radioButtonStyle"
-                    android:text="@string/cAnswerQ3" />
-
-                <RadioButton
-                    style="@style/radioButtonRedStyle"
-                    android:text="@string/dAnswerQ3" />
-
-            </RadioGroup>
+            <CheckBox
+                android:id="@+id/dAnswerQ3checkBox"
+                style="@style/possibleAnswerStyleRed"
+                android:tag="@string/incorrectAnswerQ3tag"
+                android:text="@string/dAnswerQ3" />
 
         </LinearLayout>
 
@@ -198,22 +196,22 @@
             <RadioGroup
                 android:id="@+id/question4Group"
                 style="@style/radioGroupStyle"
-                android:tag="1">
+                android:tag="@string/correctAnswerQ4tag">
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/aAnswerQ4" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/bAnswerQ4" />
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/cAnswerQ4" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/dAnswerQ4" />
 
             </RadioGroup>
@@ -237,25 +235,26 @@
             <RadioGroup
                 android:id="@+id/question5Group"
                 style="@style/radioGroupStyle"
-                android:tag="1">
+                android:tag="@string/correctAnswerQ5tag">
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/aAnswerQ5" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/bAnswerQ5" />
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/cAnswerQ5" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/dAnswerQ5" />
 
             </RadioGroup>
+
         </LinearLayout>
 
         <LinearLayout
@@ -275,22 +274,22 @@
             <RadioGroup
                 android:id="@+id/question6Group"
                 style="@style/radioGroupStyle"
-                android:tag="0">
+                android:tag="@string/correctAnswerQ6tag">
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/aAnswerQ6" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/bAnswerQ6" />
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/cAnswerQ6" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/dAnswerQ6" />
 
             </RadioGroup>
@@ -314,22 +313,22 @@
             <RadioGroup
                 android:id="@+id/question7Group"
                 style="@style/radioGroupStyle"
-                android:tag="2">
+                android:tag="@string/correctAnswerQ7tag">
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/aAnswerQ7" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/bAnswerQ7" />
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/cAnswerQ7" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/dAnswerQ7" />
 
             </RadioGroup>
@@ -353,22 +352,22 @@
             <RadioGroup
                 android:id="@+id/question8Group"
                 style="@style/radioGroupStyle"
-                android:tag="0">
+                android:tag="@string/correctAnswerQ8tag">
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/aAnswerQ8" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/bAnswerQ8" />
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/cAnswerQ8" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/dAnswerQ8" />
 
             </RadioGroup>
@@ -392,22 +391,22 @@
             <RadioGroup
                 android:id="@+id/question9Group"
                 style="@style/radioGroupStyle"
-                android:tag="3">
+                android:tag="@string/correctAnswerQ9tag">
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/aAnswerQ9" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/bAnswerQ9" />
 
                 <RadioButton
-                    style="@style/radioButtonStyle"
+                    style="@style/possibleAnswerStyle"
                     android:text="@string/cAnswerQ9" />
 
                 <RadioButton
-                    style="@style/radioButtonRedStyle"
+                    style="@style/possibleAnswerStyleRed"
                     android:text="@string/dAnswerQ9" />
 
             </RadioGroup>
@@ -428,36 +427,18 @@
                 style="@style/questionStatementStyle"
                 android:text="@string/question10" />
 
-            <RadioGroup
-                android:id="@+id/question10Group"
-                style="@style/radioGroupStyle"
-                android:tag="1">
-
-                <RadioButton
-                    style="@style/radioButtonStyle"
-                    android:text="@string/aAnswerQ10" />
-
-                <RadioButton
-                    style="@style/radioButtonRedStyle"
-                    android:text="@string/bAnswerQ10" />
-
-                <RadioButton
-                    style="@style/radioButtonStyle"
-                    android:text="@string/cAnswerQ10" />
-
-                <RadioButton
-                    style="@style/radioButtonRedStyle"
-                    android:text="@string/dAnswerQ10" />
-
-            </RadioGroup>
+            <EditText
+                android:id="@+id/question10EditText"
+                style="@style/possibleAnswerStyleEditText"
+                android:hint="@string/editTextAnswerQ10" />
 
         </LinearLayout>
 
         <Button
             android:id="@+id/submitButton"
+            style="@style/buttonStyle"
             android:onClick="checkResults"
-            android:text="@string/submitButtonText"
-            style="@style/buttonStyle" />
+            android:text="@string/submitButtonText" />
 
     </LinearLayout>
 

@@ -1,3 +1,23 @@
 <resources>
     <dimen name="marginPrimary">16dp</dimen>
+    <dimen name="possibleAnswerTextSize">16sp</dimen>
+    <dimen name="questionStatementTextSize">18sp</dimen>
+    <dimen name="questionStatementSidesPaddingSize">4dp</dimen>
+    <dimen name="questionLabelTextSize">20sp</dimen>
+    <dimen name="questionLabelPaddingLeftSize">4dp</dimen>
+    <dimen name="questionLabelPaddingBottomSize">2dp</dimen>
+    <dimen name="questionLabelPaddingtopSize">2dp</dimen>
+    <dimen name="questionLayaoutMarginBottomSize">25dp</dimen>
+    <dimen name="presentationTextSize">25sp</dimen>
+    <dimen name="presentationSecondTextMarginBottomSize">20dp</dimen>
+    <dimen name="userNameEditTextPaddingSize">5dp</dimen>
+    <dimen name="userNameEditTextSize">25sp</dimen>
+    <dimen name="separatorTextViewPaddingTopSize">30dp</dimen>
+    <dimen name="separatorTextViewPaddingBottomSize">30dp</dimen>
+    <dimen name="separatorTextViewMarginTopSize">30dp</dimen>
+    <dimen name="separatorTextViewTextSize">30sp</dimen>
+    <dimen name="mainLogoMarginBottomSize">30dp</dimen>
+    <dimen name="buttonPaddingSize">10dp</dimen>
+    <dimen name="buttonMarginBottomSize">10dp</dimen>
+    <dimen name="buttonTextSize">20sp</dimen>
 </resources>

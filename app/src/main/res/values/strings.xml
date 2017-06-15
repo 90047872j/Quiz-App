@@ -5,6 +5,7 @@
     <string name="beginText">Let\'s Begin!</string>
     <string name="editTextNameString">ENTER YOUR NAME HERE</string>
     <string name="missingName">Please go up and enter your name</string>
+    <string name="missedAnswer">Keep Strong %1$s,\nyou missed track %2$d</string>
     <string name="submitButtonText">Submit your training</string>
     <string name="track1">1. Warmup</string>
     <string name="track2">2. Legs/Squats</string>
@@ -18,7 +19,7 @@
     <string name="track10">10.Cooldown/Stretch</string>
     <string name="question1">What BODYPUMP release does <i>Wonderwall - Jackie \'O\'</i> belong to?</string>
     <string name="question2">What is the BODYPUMP #87 Track 2 Tittle?</string>
-    <string name="question3">Which one of these Track 3 is longer?</string>
+    <string name="question3">Which of these Track 3 is/are longer? (multiple right answers)</string>
     <string name="question4">Which one of these tracks is a Track 4?</string>
     <string name="question5">What is the BODYPUMP #52 Track 5?</string>
     <string name="question6">What is the BODYPUMP #26 Track 6 Tittle?</string>
@@ -34,9 +35,9 @@
     <string name="bAnswerQ2">Eye Of The Tiger</string>
     <string name="cAnswerQ2">Smells Like Teen Spirit (Voc Mix)</string>
     <string name="dAnswerQ2">Black Betty</string>
-    <string name="aAnswerQ3">Hole In The Head - Sugababes</string>
+    <string name="aAnswerQ3">Push it (Again) - Salt N Pepa</string>
     <string name="bAnswerQ3">You Needed Me - Boyzone</string>
-    <string name="cAnswerQ3">Push it (Again) - Salt N Pepa</string>
+    <string name="cAnswerQ3">Don\'t Tell Me - Madonna</string>
     <string name="dAnswerQ3">Spente Le Stelle - Opera Trance</string>
     <string name="aAnswerQ4">Domino	- Miss Daise</string>
     <string name="bAnswerQ4">The Tide - Twilight</string>
@@ -62,11 +63,22 @@
     <string name="bAnswerQ9">Michael J. McSweeney, Ruthie T and Donna McCourt</string>
     <string name="cAnswerQ9">Michael J. McSweeney, Lisa Osborne and Donna McCourt</string>
     <string name="dAnswerQ9">Michael J. McSweeney and Donna McCourt</string>
-    <string name="aAnswerQ10">BodyPump #59</string>
-    <string name="bAnswerQ10">BodyPump #58</string>
-    <string name="cAnswerQ10">BodyPump #57</string>
-    <string name="dAnswerQ10">BodyPump #61</string>
-    <string name="missedAnswer">Keep Strong %1$s,\nyou missed track %2$d</string>
+    <string name="editTextAnswerQ10">Enter release number here</string>
+
+    <string name="correctAnswerQ1tag">3</string>
+    <string name="correctAnswerQ2tag">3</string>
+
+    <string name="correctAnswerQ3tag">1</string>
+    <string name="incorrectAnswerQ3tag">-2</string>
+
+    <string name="correctAnswerQ4tag">1</string>
+    <string name="correctAnswerQ5tag">1</string>
+    <string name="correctAnswerQ6tag">0</string>
+    <string name="correctAnswerQ7tag">2</string>
+    <string name="correctAnswerQ8tag">0</string>
+    <string name="correctAnswerQ9tag">3</string>
+    <string name="correctAnswerQ10">58</string>
+
     <string name="correctAnswers0">%1$s you scored: %2$d\nDo you even know what BODYPUMP is?</string>
     <string name="correctAnswers1">%1$s you scored: %2$d\nI bet you got that one by luck!</string>
     <string name="correctAnswers2">%1$s you scored: %2$d\nMaybe you know these 2 answers, maybe you got them by luck!</string>
