@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
                 i += Integer.parseInt(checkBox.getTag().toString());
             }
         }
-        if (i >= 1) {
+        if (i == 2) {
             n = 1;
         }
         return n;
@@ -171,6 +171,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int answerCorrectEditText(String text) {
         int n = 0;
+        text = text.trim();
         if (text.equalsIgnoreCase(getString(R.string.correctAnswerQ10))) {
             n = 1;
         }
