@@ -19,7 +19,7 @@
     <string name="track10">10.Cooldown/Stretch</string>
     <string name="question1">What BODYPUMP release does <i>Wonderwall - Jackie \'O\'</i> belong to?</string>
     <string name="question2">What is the BODYPUMP #87 Track 2 Tittle?</string>
-    <string name="question3">Which of these Track 3 is/are longer? (multiple right answers)</string>
+    <string name="question3">Which of these Tracks 3 is/are longer? (multiple right answers)</string>
     <string name="question4">Which one of these tracks is a Track 4?</string>
     <string name="question5">What is the BODYPUMP #52 Track 5?</string>
     <string name="question6">What is the BODYPUMP #26 Track 6 Tittle?</string>
@@ -64,13 +64,10 @@
     <string name="cAnswerQ9">Michael J. McSweeney, Lisa Osborne and Donna McCourt</string>
     <string name="dAnswerQ9">Michael J. McSweeney and Donna McCourt</string>
     <string name="editTextAnswerQ10">Enter release number here</string>
-
     <string name="correctAnswerQ1tag">3</string>
     <string name="correctAnswerQ2tag">3</string>
-
     <string name="correctAnswerQ3tag">1</string>
     <string name="incorrectAnswerQ3tag">-2</string>
-
     <string name="correctAnswerQ4tag">1</string>
     <string name="correctAnswerQ5tag">1</string>
     <string name="correctAnswerQ6tag">0</string>
@@ -78,7 +75,6 @@
     <string name="correctAnswerQ8tag">0</string>
     <string name="correctAnswerQ9tag">3</string>
     <string name="correctAnswerQ10">58</string>
-
     <string name="correctAnswers0">%1$s you scored: %2$d\nDo you even know what BODYPUMP is?</string>
     <string name="correctAnswers1">%1$s you scored: %2$d\nI bet you got that one by luck!</string>
     <string name="correctAnswers2">%1$s you scored: %2$d\nMaybe you know these 2 answers, maybe you got them by luck!</string>

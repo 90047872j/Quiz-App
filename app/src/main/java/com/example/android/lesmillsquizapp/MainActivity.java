@@ -18,34 +18,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkResults(View view) {
-
         int totalAnswersCorrect = 0;
-
         EditText userNameEditText = (EditText) findViewById(R.id.userNameEditText);
         String userName = userNameEditText.getText().toString();
-
         RadioGroup q1 = (RadioGroup) findViewById(R.id.question1Group);
         RadioGroup q2 = (RadioGroup) findViewById(R.id.question2Group);
-
         CheckBox q3a = (CheckBox) findViewById(R.id.aAnswerQ3checkBox);
         CheckBox q3b = (CheckBox) findViewById(R.id.bAnswerQ3checkBox);
         CheckBox q3c = (CheckBox) findViewById(R.id.cAnswerQ3checkBox);
         CheckBox q3d = (CheckBox) findViewById(R.id.dAnswerQ3checkBox);
-
         CheckBox[] question3List = {q3a, q3b, q3c, q3d};
-
         RadioGroup q4 = (RadioGroup) findViewById(R.id.question4Group);
         RadioGroup q5 = (RadioGroup) findViewById(R.id.question5Group);
         RadioGroup q6 = (RadioGroup) findViewById(R.id.question6Group);
         RadioGroup q7 = (RadioGroup) findViewById(R.id.question7Group);
         RadioGroup q8 = (RadioGroup) findViewById(R.id.question8Group);
         RadioGroup q9 = (RadioGroup) findViewById(R.id.question9Group);
-
         RadioGroup[] radioGroupList = {q1, q2, q4, q5, q6, q7, q8, q9};
-
         EditText question10EditText = (EditText) findViewById(R.id.question10EditText);
         String question10Answer = question10EditText.getText().toString();
-
 
         if (userName.isEmpty()) {
             displayToast(getString(R.string.missingName));
@@ -137,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             n = 3;
         }
 
-        if(text.isEmpty()){
+        if (text.isEmpty()) {
             n = 10;
         }
         return n;
@@ -155,15 +146,14 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
- private int answersCorrectRadioGroup (RadioGroup[] radioGroups) {
-     int n = 0;
-
-     for (RadioGroup radioGroup : radioGroups) {
-         if (isAnswerCorrectRadioGroup(radioGroup))
-             n++;
-     }
-     return n;
- }
+    private int answersCorrectRadioGroup(RadioGroup[] radioGroups) {
+        int n = 0;
+        for (RadioGroup radioGroup : radioGroups) {
+            if (isAnswerCorrectRadioGroup(radioGroup))
+                n++;
+        }
+        return n;
+    }
 
     private int answerCorrectCheckBox(CheckBox[] checkBoxes) {
         int i = 0;
@@ -181,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int answerCorrectEditText(String text) {
         int n = 0;
-        if (text.equalsIgnoreCase(getString(R.string.correctAnswerQ10))){
+        if (text.equalsIgnoreCase(getString(R.string.correctAnswerQ10))) {
             n = 1;
         }
         return n;
