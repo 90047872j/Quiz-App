@@ -6,10 +6,9 @@
     tools:context="com.example.android.lesmillsquizapp.MainActivity">
 
     <LinearLayout
-
         android:id="@+id/mainLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -21,6 +20,7 @@
             <ImageView
                 android:id="@+id/backgroundImageView"
                 style="@style/backgroundImageStyle"
+                android:contentDescription="@null"
                 android:src="@drawable/mainbackground" />
 
             <LinearLayout
@@ -32,6 +32,7 @@
                 <ImageView
                     android:id="@+id/mainLogoImageview"
                     style="@style/mainLogoStyle"
+                    android:contentDescription="@null"
                     android:src="@drawable/mainlogo" />
 
                 <TextView
@@ -44,12 +45,10 @@
                     style="@style/userNameEditTextStyle"
                     android:hint="@string/editTextNameString" />
 
-
                 <TextView
                     android:id="@+id/presentatioSecondTextView"
                     style="@style/presentationSecondTextStyle"
                     android:text="@string/welcome2Text" />
-
 
                 <TextView
                     android:id="@+id/separatorBeginTextView"
@@ -60,7 +59,7 @@
 
         </RelativeLayout>
 
-        <include layout="@layout/questions_layout"/>
+        <include layout="@layout/questions_layout" />
 
         <Button
             android:id="@+id/submitButton"

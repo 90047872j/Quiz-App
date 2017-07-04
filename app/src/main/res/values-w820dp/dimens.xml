@@ -3,4 +3,25 @@
          (such as screen margins) for screens with more than 820dp of available width. This
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
     <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="marginPrimary">16dp</dimen>
+    <dimen name="possibleAnswerTextSize">18sp</dimen>
+    <dimen name="questionStatementTextSize">20sp</dimen>
+    <dimen name="questionStatementSidesPaddingSize">4dp</dimen>
+    <dimen name="questionLabelTextSize">22sp</dimen>
+    <dimen name="questionLabelPaddingLeftSize">4dp</dimen>
+    <dimen name="questionLabelPaddingBottomSize">2dp</dimen>
+    <dimen name="questionLabelPaddingtopSize">2dp</dimen>
+    <dimen name="questionLayaoutMarginBottomSize">25dp</dimen>
+    <dimen name="presentationTextSize">27sp</dimen>
+    <dimen name="presentationSecondTextMarginBottomSize">20dp</dimen>
+    <dimen name="userNameEditTextPaddingSize">5dp</dimen>
+    <dimen name="userNameEditTextSize">27sp</dimen>
+    <dimen name="separatorTextViewPaddingTopSize">30dp</dimen>
+    <dimen name="separatorTextViewPaddingBottomSize">30dp</dimen>
+    <dimen name="separatorTextViewMarginTopSize">30dp</dimen>
+    <dimen name="separatorTextViewTextSize">32sp</dimen>
+    <dimen name="mainLogoMarginBottomSize">30dp</dimen>
+    <dimen name="buttonPaddingSize">10dp</dimen>
+    <dimen name="buttonMarginBottomSize">10dp</dimen>
+    <dimen name="buttonTextSize">22sp</dimen>
 </resources>

@@ -1,16 +1,12 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
-        android:id="@+id/mainLayout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track1TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track1" />
 
         <TextView
-            android:id="@+id/question1TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question1" />
 
@@ -39,17 +35,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question2Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track2TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track2" />
 
         <TextView
-            android:id="@+id/question2TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question2" />
 
@@ -78,17 +70,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question3Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track3TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track3" />
 
         <TextView
-            android:id="@+id/question3TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question3" />
 
@@ -118,17 +106,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question4Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track4TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track4" />
 
         <TextView
-            android:id="@+id/question4TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question4" />
 
@@ -157,17 +141,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question5Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track5TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track5" />
 
         <TextView
-            android:id="@+id/question5TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question5" />
 
@@ -196,17 +176,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question6Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track6TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track6" />
 
         <TextView
-            android:id="@+id/question6TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question6" />
 
@@ -235,17 +211,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question7Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track7TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track7" />
 
         <TextView
-            android:id="@+id/question7TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question7" />
 
@@ -274,17 +246,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question8Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track8TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track8" />
 
         <TextView
-            android:id="@+id/question8TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question8" />
 
@@ -313,17 +281,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question9Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track9TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track9" />
 
         <TextView
-            android:id="@+id/question9TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question9" />
 
@@ -352,17 +316,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/question10Layout"
-        style="@style/questionLayoutStyle">
+    <LinearLayout style="@style/questionLayoutStyle">
 
         <TextView
-            android:id="@+id/track10TextView"
             style="@style/questionLabelStyle"
             android:text="@string/track10" />
 
         <TextView
-            android:id="@+id/question10TextView"
             style="@style/questionStatementStyle"
             android:text="@string/question10" />
 

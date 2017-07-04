@@ -1,9 +1,7 @@
 <resources>
-
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
 
     <style name="questionsLayoutStyle">
         <item name="android:layout_width">match_parent</item>
@@ -12,7 +10,6 @@
         <item name="android:background">@color/mainBackgroundColor</item>
 
     </style>
-
 
     <style name="possibleAnswerStyle">
         <item name="android:layout_width">match_parent</item>
@@ -29,7 +26,6 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:gravity">center</item>
     </style>
-
 
     <style name="questionStatementStyle">
         <item name="android:layout_width">match_parent</item>
@@ -155,5 +151,4 @@
         <item name="android:textSize">@dimen/buttonTextSize</item>
         <item name="android:textStyle">bold</item>
     </style>
-
 </resources>

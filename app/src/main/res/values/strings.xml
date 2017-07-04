@@ -78,13 +78,12 @@
     <string name="correctAnswers0">%1$s you scored: %2$d\nDo you even know what BODYPUMP is?</string>
     <string name="correctAnswers1">%1$s you scored: %2$d\nI bet you got that one by luck!</string>
     <string name="correctAnswers2">%1$s you scored: %2$d\nMaybe you know these 2 answers, maybe you got them by luck!</string>
-    <string name="correctAnswers3">%1$s you scored: %2$d\nYou should check BODYPUMP info on Internet</string>
-    <string name="correctAnswers4">%1$s you scored: %2$d\nAlmost half training accomplished, not bad, I bet next time yo can do better</string>
+    <string name="correctAnswers3">%1$s you scored: %2$d\nYou should check BODYPUMP info on Internet.</string>
+    <string name="correctAnswers4">%1$s you scored: %2$d\nAlmost half training accomplished, not bad, I bet next time yo can do better.</string>
     <string name="correctAnswers5">%1$s you scored: %2$d\nHalf training accomplished, well done!</string>
     <string name="correctAnswers6">%1$s you scored: %2$d\nYou made 6 tracks, outstanding!</string>
     <string name="correctAnswers7">%1$s you scored: %2$d\nCongratulations consider yourself a true BODYPUMP fan!</string>
     <string name="correctAnswers8">%1$s you scored: %2$d\nYou accomplished almost a complete training, really impressive!</string>
     <string name="correctAnswers9">%1$s you scored: %2$d\nTotally amazing, you are a pro BODYPUMP fan!</string>
-    <string name="correctAnswers10">%1$s you scored: %2$d\nPerfect, you are better Pump fam than everyone in New Zealand, including Mike and Glen!</string>
-
+    <string name="correctAnswers10">%1$s you scored: %2$d\nPerfect, you are better Pump fan than everyone in New Zealand, including Mike and Glen!</string>
 </resources>

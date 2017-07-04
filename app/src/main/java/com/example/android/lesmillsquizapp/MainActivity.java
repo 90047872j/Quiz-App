@@ -10,7 +10,6 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkResults(View view) {
-        int totalAnswersCorrect = 0;
         EditText userNameEditText = (EditText) findViewById(R.id.userNameEditText);
         String userName = userNameEditText.getText().toString();
         RadioGroup q1 = (RadioGroup) findViewById(R.id.question1Group);
@@ -37,57 +35,46 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup[] radioGroupList = {q1, q2, q4, q5, q6, q7, q8, q9};
         EditText question10EditText = (EditText) findViewById(R.id.question10EditText);
         String question10Answer = question10EditText.getText().toString();
-
+        int missedAnswerNumber = getMissedAnswerNumber(radioGroupList, question3List, question10Answer);
         if (userName.isEmpty()) {
             displayToast(getString(R.string.missingName));
-        } else if (missedAnswerNumber(radioGroupList, question3List, question10Answer) != 0) {
-            displayToast(String.format(getString(R.string.missedAnswer), userName, missedAnswerNumber(radioGroupList, question3List, question10Answer)));
+        } else if (missedAnswerNumber != 0) {
+            displayToast(String.format(getString(R.string.missedAnswer), userName, missedAnswerNumber));
         } else {
-            totalAnswersCorrect = finalCorrectAnswers(answersCorrectRadioGroup(radioGroupList), answerCorrectCheckBox(question3List), answerCorrectEditText(question10Answer));
-
-            switch (totalAnswersCorrect) {
+            int totalCorrectAnwers = getCorrectAnswersSum(getCorrectAnswersRadioGroupNumber(radioGroupList), getCorrectAnswerCheckBox(question3List), getCorrectAnswerEditText(question10Answer));
+            switch (totalCorrectAnwers) {
                 case 0:
-                    displayToast((String.format(getString(R.string.correctAnswers0), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers0), userName, totalCorrectAnwers)));
                     break;
-
                 case 1:
-                    displayToast((String.format(getString(R.string.correctAnswers1), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers1), userName, totalCorrectAnwers)));
                     break;
-
                 case 2:
-                    displayToast((String.format(getString(R.string.correctAnswers2), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers2), userName, totalCorrectAnwers)));
                     break;
-
                 case 3:
-                    displayToast((String.format(getString(R.string.correctAnswers3), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers3), userName, totalCorrectAnwers)));
                     break;
-
                 case 4:
-                    displayToast((String.format(getString(R.string.correctAnswers4), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers4), userName, totalCorrectAnwers)));
                     break;
-
                 case 5:
-                    displayToast((String.format(getString(R.string.correctAnswers5), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers5), userName, totalCorrectAnwers)));
                     break;
-
                 case 6:
-                    displayToast((String.format(getString(R.string.correctAnswers6), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers6), userName, totalCorrectAnwers)));
                     break;
-
                 case 7:
-                    displayToast((String.format(getString(R.string.correctAnswers7), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers7), userName, totalCorrectAnwers)));
                     break;
-
                 case 8:
-                    displayToast((String.format(getString(R.string.correctAnswers8), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers8), userName, totalCorrectAnwers)));
                     break;
-
                 case 9:
-                    displayToast((String.format(getString(R.string.correctAnswers9), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers9), userName, totalCorrectAnwers)));
                     break;
-
                 case 10:
-                    displayToast((String.format(getString(R.string.correctAnswers10), userName, totalAnswersCorrect)));
+                    displayToast((String.format(getString(R.string.correctAnswers10), userName, totalCorrectAnwers)));
                     break;
             }
         }
@@ -97,24 +84,19 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 
-    private boolean answerSelected(RadioGroup radioGroup) {
-        int id = radioGroup.getCheckedRadioButtonId();
-        if (id != -1) {
-            return true;
-        }
-        return false;
+    private boolean isAnswerSelectedRadioGroup(RadioGroup radioGroup) {
+        return radioGroup.getCheckedRadioButtonId() != -1;
     }
 
-    private int missedAnswerNumber(RadioGroup[] radioGroup, CheckBox[] checkBoxes, String text) {
-        int n = 0;
+    private int getMissedAnswerNumber(RadioGroup[] radioGroup, CheckBox[] checkBoxes, String text) {
+        int missedAnswerNumber = 0;
         boolean x = false;
         for (int i = 0; i < radioGroup.length; i++) {
-            if (!answerSelected(radioGroup[i]) && x == false) {
-                x = true;
+            if (!isAnswerSelectedRadioGroup(radioGroup[i]) && x == false) {
                 if (i < 2) {
-                    n = i + 1;
+                    missedAnswerNumber = i + 1;
                 } else {
-                    n = i + 2;
+                    missedAnswerNumber = i + 2;
                 }
             }
         }
@@ -125,62 +107,60 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (count == 0) {
-            n = 3;
+            missedAnswerNumber = 3;
         }
 
         if (text.isEmpty()) {
-            n = 10;
+            missedAnswerNumber = 10;
         }
-        return n;
+        return missedAnswerNumber;
     }
 
     private boolean isAnswerCorrectRadioGroup(RadioGroup radioGroup) {
         int correctAnswerPosition = Integer.parseInt(radioGroup.getTag().toString());
         for (int i = 0; i < radioGroup.getChildCount(); i++) {
             RadioButton radioButton = (RadioButton) radioGroup.getChildAt(i);
-            if (radioButton.isChecked()) {
-                if (i == correctAnswerPosition)
-                    return true;
+            if (i == correctAnswerPosition && radioButton.isChecked()) {
+                return true;
             }
         }
         return false;
     }
 
-    private int answersCorrectRadioGroup(RadioGroup[] radioGroups) {
-        int n = 0;
+    private int getCorrectAnswersRadioGroupNumber(RadioGroup[] radioGroups) {
+        int correctAnswers = 0;
         for (RadioGroup radioGroup : radioGroups) {
             if (isAnswerCorrectRadioGroup(radioGroup))
-                n++;
+                correctAnswers++;
         }
-        return n;
+        return correctAnswers;
     }
 
-    private int answerCorrectCheckBox(CheckBox[] checkBoxes) {
+    private int getCorrectAnswerCheckBox(CheckBox[] checkBoxes) {
         int i = 0;
-        int n = 0;
+        int correctAnswer = 0;
         for (CheckBox checkBox : checkBoxes) {
             if (checkBox.isChecked()) {
                 i += Integer.parseInt(checkBox.getTag().toString());
             }
         }
         if (i == 2) {
-            n = 1;
+            correctAnswer = 1;
         }
-        return n;
+        return correctAnswer;
     }
 
-    private int answerCorrectEditText(String text) {
-        int n = 0;
+    private int getCorrectAnswerEditText(String text) {
+        int correctAnswer = 0;
         text = text.trim();
-        if (text.equalsIgnoreCase(getString(R.string.correctAnswerQ10))) {
-            n = 1;
+        if (text.equals(getString(R.string.correctAnswerQ10))) {
+            correctAnswer = 1;
         }
-        return n;
+        return correctAnswer;
     }
 
-    private int finalCorrectAnswers(int a, int b, int c) {
-        int n = 0;
-        n = a + b + c;
-        return n;
+    private int getCorrectAnswersSum(int a, int b, int c) {
+        int totalCorrectAnswers = a + b + c;
+        return totalCorrectAnswers;
     }
 }
