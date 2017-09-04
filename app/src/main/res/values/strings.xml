@@ -18,14 +18,14 @@
     <string name="track9">9. Abdominals/Core</string>
     <string name="track10">10.Cooldown/Stretch</string>
     <string name="question1">What BODYPUMP release does <i>Wonderwall - Jackie \'O\'</i> belong to?</string>
-    <string name="question2">What is the BODYPUMP #87 Track 2 Tittle?</string>
-    <string name="question3">Which of these Tracks 3 is/are longer? (multiple right answers)</string>
+    <string name="question2">What is the BODYPUMP #87 Track 2 Title?</string>
+    <string name="question3">Which of these Tracks 3 are longer? (multiple right answer)</string>
     <string name="question4">Which one of these tracks is a Track 4?</string>
     <string name="question5">What is the BODYPUMP #52 Track 5?</string>
     <string name="question6">What is the BODYPUMP #26 Track 6 Tittle?</string>
-    <string name="question7">What sequence/exercise must be performed on verse 1 in BODYPUMP #53 Track 7?</string>
+    <string name="question7">What exercise must be performed on verse 1 in BODYPUMP #53 Track 7?</string>
     <string name="question8">Which one of these artists has been selected for one or several track 8?</string>
-    <string name="question9">Who are the video presenters on BODYPUMP #25?</string>
+    <string name="question9">Who are the video presenters for BODYPUMP #25?</string>
     <string name="question10">What was the last BODYPUMP release choreographed by Michael J. McSweeney?</string>
     <string name="aAnswerQ1">BODYPUMP #46</string>
     <string name="bAnswerQ1">BODYPUMP #27</string>
@@ -44,7 +44,7 @@
     <string name="cAnswerQ4">I Like How It Feels - Solitary Phase</string>
     <string name="dAnswerQ4">Scream - Usher</string>
     <string name="aAnswerQ5">Don\'t Panic - Logo Feat. Dawn Joseph (Coldplay)</string>
-    <string name="bAnswerQ5">All Things (Just Keep Getting Better)- Wildlife with Simone Denny</string>
+    <string name="bAnswerQ5">All Things (Just Keep Getting Better) - Wildlife with Simone Denny</string>
     <string name="cAnswerQ5">What You Waiting For? - Gwen Stefani</string>
     <string name="dAnswerQ5">Let The Sun Shine - Milk and Sugar Feat. Lizzie Pattinson</string>
     <string name="aAnswerQ6">Stomp</string>

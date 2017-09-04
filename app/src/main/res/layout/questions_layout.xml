@@ -329,7 +329,10 @@
         <EditText
             android:id="@+id/question10EditText"
             style="@style/possibleAnswerStyleEditText"
-            android:hint="@string/editTextAnswerQ10" />
+            android:hint="@string/editTextAnswerQ10"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"/>
 
     </LinearLayout>
 
